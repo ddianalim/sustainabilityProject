@@ -114,8 +114,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jRT-mb-WMx"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="xCF-Hr-BUA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vI9-6M-dZK">
+                            <connections>
+                                <segue destination="F1i-Se-b4h" kind="unwind" identifier="done" unwindAction="unwindWithSegue:" id="ABB-jW-bZ3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaP-nO-bYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="F1i-Se-b4h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1527" y="408"/>
         </scene>
