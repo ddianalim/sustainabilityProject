@@ -34,7 +34,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-yW-ffh">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-yW-ffh" userLabel="Point Value">
                                                     <rect key="frame" x="0.0" y="30" width="345" height="29.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.41340815355329952" green="0.41340815355329952" blue="0.41340815355329952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,7 +54,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="pointValuelabel" destination="h8G-yW-ffh" id="r9s-YW-1yl"/>
+                                    <outlet property="taskPointValuelabel" destination="h8G-yW-ffh" id="K5b-H7-7Xr"/>
                                     <outlet property="taskTitleLabel" destination="cge-0x-ChK" id="Zy5-yq-kaD"/>
                                 </connections>
                             </tableViewCell>

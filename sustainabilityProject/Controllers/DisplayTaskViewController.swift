@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DisplayNoteViewController: UIViewController {
+class DisplayTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

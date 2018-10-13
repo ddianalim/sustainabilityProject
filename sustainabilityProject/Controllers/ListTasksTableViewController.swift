@@ -20,9 +20,9 @@ class ListTasksTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 2
-        let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath)
-        cell.textLabel?.text = "Cell Row: \(indexPath.row) Section: \(indexPath.section)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath) as! ListTasksTableViewCell
+        cell.taskTitleLabel.text = "task's title"
+        cell.taskPointValuelabel.text = "task's point value"
         
         return cell
     }

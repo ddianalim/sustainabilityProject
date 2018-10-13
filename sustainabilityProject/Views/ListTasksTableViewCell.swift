@@ -11,7 +11,8 @@ import UIKit
 class ListTasksTableViewCell: UITableViewCell {
     
     @IBOutlet weak var taskTitleLabel: UILabel!
-    @IBOutlet weak var pointValuelabel: UILabel!
+    
+    @IBOutlet weak var taskPointValuelabel: UILabel!
     
 }
 
