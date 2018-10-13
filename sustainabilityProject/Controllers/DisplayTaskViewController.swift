@@ -14,5 +14,12 @@ class DisplayTaskViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        titleTextField.text = ""
+        contentTextView.text = ""
+    }
+    
 }
 
