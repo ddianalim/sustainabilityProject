@@ -10,10 +10,11 @@ import UIKit
 
 class ListTasksTableViewController: UITableViewController {
     
-    
-    var tasks = ["Reusable Bottle","Reusable Bag","Reusable Drink Container", "Packed Lunch", "Reusable Leftover Container", "Reusable straw/No straw", "Reusable Utensils", "Paperless Receipts"]
+    var tasks1 = ["Reusable Bottle","Reusable Bag","Reusable Drink Container", "Packed Lunch", "Reusable Leftover Container", "Reusable straw/No straw", "Reusable Utensils", "Paperless Receipts"]
     
     var points = ["5", "10", "15", "20", "_", "5", "5", "5"]
+    
+    var tasks = [Task]()
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         
@@ -25,13 +26,13 @@ class ListTasksTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 1
-        return tasks.count
+        return tasks1.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath) as! ListTasksTableViewCell
-        for _ in 0..<tasks.count{
-            cell.taskTitleLabel.text = tasks[indexPath.row]
+        for _ in 0..<tasks1.count{
+            cell.taskTitleLabel.text = tasks1[indexPath.row]
             cell.taskPointValuelabel.text = points[indexPath.row]+" points"
         }
         

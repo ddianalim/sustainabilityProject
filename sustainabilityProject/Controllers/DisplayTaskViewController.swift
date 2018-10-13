@@ -10,15 +10,19 @@ import UIKit
 
 class DisplayTaskViewController: UIViewController {
     
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    @IBOutlet weak var taskPointValueLabel: UILabel!
+    @IBOutlet weak var taskDescriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        titleTextField.text = ""
-        contentTextView.text = ""
+        taskTitleLabel.text = "test"
+        taskPointValueLabel.text = "point value"
+        taskDescriptionTextView.text = "description..."
     }
     
 }
