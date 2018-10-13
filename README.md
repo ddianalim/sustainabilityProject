@@ -17,16 +17,18 @@ A user opens the app and logs in. Then they can get points by indicating that th
 
 # Technical
 
-## Models
-- Users
-- Tasks
-- Points
-
 ## Views
 - Home (see all the predetermined Tasks)
 - Task (description, Complete button)
 
+## Data Models
+- Tasks
+  - Name
+  - Point value
+  - Difficulty
+  - Description
+  - Category
+
 ## Controllers
 - Main menu
-- 
 
