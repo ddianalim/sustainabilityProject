@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z39-Cq-6Wy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3CJ-kZ-kNX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Tasks Table View Controller-->
+        <!--Nulla-->
         <scene sceneID="ukY-Lv-A0W">
             <objects>
                 <tableViewController id="Z39-Cq-6Wy" customClass="ListTasksTableViewController" customModule="sustainabilityProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,6 +57,7 @@
                                 <connections>
                                     <outlet property="taskPointValuelabel" destination="h8G-yW-ffh" id="K5b-H7-7Xr"/>
                                     <outlet property="taskTitleLabel" destination="cge-0x-ChK" id="Zy5-yq-kaD"/>
+                                    <segue destination="hAk-C9-y2L" kind="show" identifier="displayTask" id="uuk-UD-Fty"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,9 +66,76 @@
                             <outlet property="delegate" destination="Z39-Cq-6Wy" id="OVg-wm-fnS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Nulla" id="JDm-jd-iSi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C73-Nj-QEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="793" y="408"/>
+        </scene>
+        <!--DisplayTaskViewController-->
+        <scene sceneID="QkU-S6-dzq">
+            <objects>
+                <viewController title="DisplayTaskViewController" id="hAk-C9-y2L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vS3-Nl-z0t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yh-ZX-dqw">
+                                <rect key="frame" x="15" y="74" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpv-J2-H4e">
+                                <rect key="frame" x="15" y="105" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvj-dy-aB8">
+                                <rect key="frame" x="15" y="136" width="345" height="516"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cpv-J2-H4e" firstAttribute="top" secondItem="5Yh-ZX-dqw" secondAttribute="bottom" constant="10" id="FQU-bv-UZF"/>
+                            <constraint firstItem="5Yh-ZX-dqw" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="15" id="IgK-3w-XqJ"/>
+                            <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="5Yh-ZX-dqw" secondAttribute="trailing" constant="15" id="PUO-h4-SW4"/>
+                            <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="cvj-dy-aB8" secondAttribute="trailing" constant="15" id="YZv-ZW-iCB"/>
+                            <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="cpv-J2-H4e" secondAttribute="trailing" constant="15" id="bQn-hT-cVF"/>
+                            <constraint firstItem="cvj-dy-aB8" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="15" id="hCz-oB-4XS"/>
+                            <constraint firstItem="cpv-J2-H4e" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="15" id="mu9-Oq-Nti"/>
+                            <constraint firstItem="cvj-dy-aB8" firstAttribute="top" secondItem="cpv-J2-H4e" secondAttribute="bottom" constant="10" id="rBF-kU-sGA"/>
+                            <constraint firstItem="5Yh-ZX-dqw" firstAttribute="top" secondItem="jRT-mb-WMx" secondAttribute="top" constant="10" id="uPz-oH-3Ts"/>
+                            <constraint firstItem="jRT-mb-WMx" firstAttribute="bottom" secondItem="cvj-dy-aB8" secondAttribute="bottom" constant="15" id="xHl-2Z-deM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jRT-mb-WMx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaP-nO-bYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="408"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eIe-bX-qqw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3CJ-kZ-kNX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ag7-aw-ZRK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z39-Cq-6Wy" kind="relationship" relationship="rootViewController" id="zHY-IL-kcA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEv-z8-wTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.799999999999997" y="408.39580209895058"/>
         </scene>
     </scenes>
 </document>
