@@ -14,6 +14,8 @@
 		F09096722172717400301EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09096712172717400301EF4 /* Assets.xcassets */; };
 		F09096752172717400301EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09096732172717400301EF4 /* LaunchScreen.storyboard */; };
 		F090967F21728FF900301EF4 /* ListTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090967E21728FF900301EF4 /* ListTasksTableViewController.swift */; };
+		F09096812172926500301EF4 /* DisplayTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09096802172926500301EF4 /* DisplayTaskViewController.swift */; };
+		F09096842172928F00301EF4 /* ListTasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09096832172928F00301EF4 /* ListTasksTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F09096742172717400301EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09096762172717400301EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F090967E21728FF900301EF4 /* ListTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTasksTableViewController.swift; sourceTree = "<group>"; };
+		F09096802172926500301EF4 /* DisplayTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTaskViewController.swift; sourceTree = "<group>"; };
+		F09096832172928F00301EF4 /* ListTasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTasksTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 		F09096662172717400301EF4 /* sustainabilityProject */ = {
 			isa = PBXGroup;
 			children = (
+				F09096852172932B00301EF4 /* Helpers */,
 				F090967D21728F6E00301EF4 /* Controllers */,
+				F09096822172927100301EF4 /* Views */,
 				F09096672172717400301EF4 /* AppDelegate.swift */,
 				F09096692172717400301EF4 /* ViewController.swift */,
 				F090966B2172717400301EF4 /* Main.storyboard */,
@@ -74,8 +80,24 @@
 			isa = PBXGroup;
 			children = (
 				F090967E21728FF900301EF4 /* ListTasksTableViewController.swift */,
+				F09096802172926500301EF4 /* DisplayTaskViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F09096822172927100301EF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F09096832172928F00301EF4 /* ListTasksTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F09096852172932B00301EF4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09096812172926500301EF4 /* DisplayTaskViewController.swift in Sources */,
 				F090966A2172717400301EF4 /* ViewController.swift in Sources */,
 				F09096702172717400301EF4 /* sustainabilityProject.xcdatamodeld in Sources */,
 				F090967F21728FF900301EF4 /* ListTasksTableViewController.swift in Sources */,
+				F09096842172928F00301EF4 /* ListTasksTableViewCell.swift in Sources */,
 				F09096682172717400301EF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
