@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listTasksTableViewCell" id="R7f-Su-M7X">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listTasksTableViewCell" id="R7f-Su-M7X" customClass="ListTasksTableViewCell" customModule="sustainabilityProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7f-Su-M7X" id="Z5O-0J-a6c">
@@ -53,6 +53,10 @@
                                         <constraint firstItem="mEa-5r-Axx" firstAttribute="top" secondItem="Z5O-0J-a6c" secondAttribute="top" id="qTe-pk-mOW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pointValuelabel" destination="h8G-yW-ffh" id="r9s-YW-1yl"/>
+                                    <outlet property="taskTitleLabel" destination="cge-0x-ChK" id="Zy5-yq-kaD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

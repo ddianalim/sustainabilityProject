@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListNotesTableViewController: UITableViewController {
+class ListTasksTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

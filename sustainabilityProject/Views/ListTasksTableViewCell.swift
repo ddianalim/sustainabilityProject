@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ListNotesTableViewCell: UITableViewCell {
+class ListTasksTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    @IBOutlet weak var pointValuelabel: UILabel!
     
 }
 
