@@ -37,23 +37,16 @@ class ListTasksTableViewController: UITableViewController {
         
         return cell
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // 1
-//        guard let identifier = segue.identifier else { return }
-//
-//        // 2
-//        if identifier == "displayNote" {
-//            print("Transitioning to the Display Note View Controller")
-//        }
-//    }
-//
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
-        
+ 
         switch identifier {
         case "done":
             print("done bar button item tapped")
+         
+        case "displayNote":
+            print("Transitioning to the Display Note View Controller")
             
         default:
             print("unexpected segue identifier")
