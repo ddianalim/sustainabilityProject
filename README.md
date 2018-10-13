@@ -11,9 +11,9 @@ A user opens the app and logs in. Then they can get points by indicating that th
 - Home page:
   - user can see different modules
   - When they click on a module:
-    -- user sees description and can click Complete button
+    - user sees description and can click Complete button
   - on exiting Task view:
-    -- user goes back to Home page
+    - user goes back to Home page
 
 # Technical
 
