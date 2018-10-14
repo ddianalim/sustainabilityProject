@@ -70,12 +70,7 @@
                     <navigationItem key="navigationItem" title="Nulla" id="JDm-jd-iSi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C73-Nj-QEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rUS-Fw-XrJ">
-                    <connections>
-                        <action selector="longPress:" destination="Z39-Cq-6Wy" id="JZf-sc-7BD"/>
-                        <outlet property="delegate" destination="Z5O-0J-a6c" id="Fji-z8-dfp"/>
-                    </connections>
-                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rUS-Fw-XrJ"/>
             </objects>
             <point key="canvasLocation" x="793" y="408"/>
         </scene>
