@@ -18,13 +18,13 @@ class ListTasksTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tasks.append(Task(title: "Reusable Bottle", pointValue: "5", description: "Problem: Globally, humans buy a million plastic bottles per minute. 91% of all plastic is not recycled. Solution: Purchase a reusable water bottle and opt to refill it every day instead of buying a single use plastic water bottle. Staying hydrated is incredibly important. Treat your water bottle as if it’s your third hand and don’t ever leave home without it."))
-        tasks.append(Task(title: "Reusable Bag", pointValue: "10", description: "yyy"))
-        tasks.append(Task(title: "Reusable Drink Container", pointValue: "15", description: "zzz"))
-        tasks.append(Task(title: "Packed Lunch", pointValue: "20", description: "iii"))
-        tasks.append(Task(title: "Reusable Leftover Container", pointValue: "20", description: "iii"))
-        tasks.append(Task(title: "Reusable straw/No straw", pointValue: "5", description: "iii"))
-        tasks.append(Task(title: "Reusable Utensils", pointValue: "5", description: "iii"))
-        tasks.append(Task(title: "Paperless Receipts", pointValue: "5", description: "iii"))
+        tasks.append(Task(title: "Reusable Bag", pointValue: "10", description: "Problem: Americans use 100 billion plastic bags a year, and about 365 plastic bags pass through the hands of a single consumer each year. Solution: Use reusable canvas, cloth, or string bags. Set yourself up for success by pre-placing bags all over your home, car and in your school bag for easy access."))
+        tasks.append(Task(title: "Reusable Drink Container", pointValue: "15", description: "Problem: Americans throw away 125 billion single use drink cups every year. Solution: BYOC (Bring Your Own Cup). To keep your daily coffee or boba shop trip plastic-free, bring along your own reusable cup, thermos, or mason jar. Be bold and kindly request your drink in your own container!"))
+        tasks.append(Task(title: "Packed Lunch", pointValue: "20", description: "Problem: If you go out to eat every day, it can be a very expensive habit. Additionally, eating out will often result in waste in the form of single use napkins, utensils, or dishes. Solution: Make your own lunch at home and pack it into a reusable container."))
+        tasks.append(Task(title: "Reusable Leftover Container", pointValue: "20", description: "Problem: Leftovers from restaurants often get wasted. Additionally, the packaging of leftovers in disposable to go boxes is extremely wasteful. Solution: When you eat out, bring a lightweight container in your bag so you can take home leftovers or things on the go. This solves the problem of food waste as well as the problem of wasted single use to go containers."))
+        tasks.append(Task(title: "Reusable straw/No straw", pointValue: "5", description: "Problem: Americans use 500 million straws every day, and these straws can’t be recycled resulting in a lot of trash. Solution: Adopt the phrase “no straw please” when ordering a drink at a bar or glass of water at a restaurant. Or get yourself a reusable option like a stainless steel, bamboo, or silicone straw for sipping your iced coffee or boba."))
+        tasks.append(Task(title: "Reusable Utensils", pointValue: "5", description: "Problem: 6 million tons of plastic forks, spoons, and cutlery are tossed every year. Solution: Bring your own reusable utensils whenever you eat out. A fork, spoon, and knife wrapped in a reusable napkin can be transported easily."))
+        tasks.append(Task(title: "Paperless Receipts", pointValue: "5", description: "Problem: Receipts are a waste of ink and paper. Solution: If it’s an option, always opt for an email or text receipt. You can even make a special email address for shopping only. That way all of your receipts are in one place and you avoid getting spammed with emails in your normal inbox."))
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
