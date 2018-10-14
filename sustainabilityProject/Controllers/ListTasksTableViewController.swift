@@ -55,31 +55,5 @@ class ListTasksTableViewController: UITableViewController {
         }
     }
 
-/*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else { return }
- 
-        switch identifier {
-        case "displayTask":
-            let task = Task()
-            task.title = taskTitleLabel.text ?? ""
-            task.pointValue = taskPointValueLabel.text ?? ""
-            task.description = taskDescriptionTextView.text ?? ""
-            print("Transitioning to the Display Task View Controller")
-
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-////            let task = tasks[indexPath.row]
-//           let destination = segue.destination as! DisplayTaskViewController
-//            let task = Task(title:tasks1[indexPath.row], pointValue:points[indexPath.row], description:"something random")
-//            destination.task = task
-//
-        case "done":
-            print("done bar button item tapped")
-     
-        default:
-            print("unexpected segue identifier")
-        }
-    }
-    */
 }
 
