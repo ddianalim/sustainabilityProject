@@ -14,6 +14,8 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskPointValueLabel: UILabel!
     @IBOutlet weak var taskDescriptionTextView: UITextView!
     
+    var task: Task?
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

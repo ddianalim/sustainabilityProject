@@ -9,9 +9,6 @@
 import Foundation
 
 class Task {
-    
-    // MARK: - Properties
-    
     var title = ""
     var pointValue = ""
     var description = ""
