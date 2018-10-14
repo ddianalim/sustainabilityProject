@@ -22,7 +22,7 @@ class DisplayTaskViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        taskTitleLabel.text = "test"
+        taskTitleLabel.text = "title"
         taskPointValueLabel.text = "point value"
         taskDescriptionTextView.text = "description..."
     }

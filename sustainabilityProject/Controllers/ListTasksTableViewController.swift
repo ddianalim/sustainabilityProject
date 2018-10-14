@@ -48,11 +48,11 @@ class ListTasksTableViewController: UITableViewController {
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
             // 2
-//            let task = tasks[indexPath.row]
-//            // 3
-//            let destination = segue.destination as! DisplayTaskViewController
-//            // 4
-//            destination.task = task
+            let task = tasks[indexPath.row]
+            // 3
+            let destination = segue.destination as! DisplayTaskViewController
+            // 4
+            destination.task = task
             
         case "done":
             print("done bar button item tapped")
