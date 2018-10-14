@@ -1,7 +1,7 @@
 # sustainabilityProject
 TeenTechSF 2018 
 
-____ is an app which allows users to live a lifestyle of zero waste by tracking the different tasks they complete and rewarding them with points.
+Nulla is an app which allows users to live a lifestyle of zero waste by tracking the different tasks they complete and rewarding them with points.
 
 ## Audience
 Teens who want to live less wastefully.
