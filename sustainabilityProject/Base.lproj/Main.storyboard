@@ -115,7 +115,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jRT-mb-WMx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="xCF-Hr-BUA">
+                    <navigationItem key="navigationItem" id="xCF-Hr-BUA">
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="vI9-6M-dZK">
                             <connections>
                                 <segue destination="F1i-Se-b4h" kind="unwind" identifier="done" unwindAction="unwindWithSegue:" id="ABB-jW-bZ3"/>
