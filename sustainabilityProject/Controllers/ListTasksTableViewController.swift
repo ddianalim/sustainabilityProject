@@ -35,7 +35,7 @@ class ListTasksTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath) as! ListTasksTableViewCell
         let task = tasks[indexPath.row]
         cell.taskTitleLabel.text = task.title
-        cell.taskPointValuelabel.text = task.pointValue
+        cell.taskPointValuelabel.text = task.pointValue + " points"
         
         return cell
     }
