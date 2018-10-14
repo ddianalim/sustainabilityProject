@@ -45,7 +45,7 @@ class ListTasksTableViewController: UITableViewController {
         let task = tasks[indexPath.row]
 
         cell.taskTitleLabel.text = task.title
-        cell.taskPointValuelabel.text = "+ " + String(task.pointValue)
+        cell.taskPointValuelabel.text = "+" + String(task.pointValue)
         
         return cell
     }

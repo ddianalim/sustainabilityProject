@@ -21,7 +21,7 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
             totalPoints += task.pointValue
-            message = "+ " + String(task.pointValue) + " points!"
+            message = "+" + String(task.pointValue) + " points!"
         }
             print(totalPoints)
         
@@ -40,7 +40,7 @@ class DisplayTaskViewController: UIViewController {
         
         if let task = task {
             taskTitleLabel.text = task.title
-            taskPointValueLabel.text = "+ " + String(task.pointValue) + " points"
+            taskPointValueLabel.text = "+" + String(task.pointValue) + " points"
             taskDescriptionTextView.text = task.description
         } else {
             taskTitleLabel.text = "Title"
