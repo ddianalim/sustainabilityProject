@@ -24,9 +24,7 @@ class ListTasksTableViewController: UITableViewController {
         navBar?.barTintColor = UIColor.gray
         navBar?.tintColor = UIColor.white
         navBar?.isTranslucent = false
-        navBar?.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: 30)!]
-//        navBar?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-
+        navBar?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: 25)!]
 
         tasks.append(Task(title: "Reuse Bottle", pointValue: 5, description: "Problem: \nGlobally, humans buy a million plastic bottles per minute. 91% of all plastic is not recycled. \n\nSolution: \nPurchase a reusable water bottle and opt to refill it every day instead of buying a single use plastic water bottle. Staying hydrated is incredibly important. Treat your water bottle as if it’s your third hand and don’t ever leave home without it."))
         tasks.append(Task(title: "Reuse Bag", pointValue: 10, description: "Problem: \nAmericans use 100 billion plastic bags a year, and about 365 plastic bags pass through the hands of a single consumer each year. \n\nSolution: \nUse reusable canvas, cloth, or string bags. Set yourself up for success by pre-placing bags all over your home, car and in your school bag for easy access."))
