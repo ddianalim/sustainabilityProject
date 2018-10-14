@@ -30,7 +30,7 @@ class DisplayTaskViewController: UIViewController {
                 message, preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
-            alertController.view.tintColor = UIColor.red
+            alertController.view.tintColor = UIColor(red:0.64, green:0.77, blue:0.79, alpha:1.0)
 
     }
     
