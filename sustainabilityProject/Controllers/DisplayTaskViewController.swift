@@ -18,7 +18,9 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskDescriptionTextView: UITextView!
     
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
-            totalPoints += 5
+        if let task = task {
+            totalPoints += task.pointValue
+        }
             print(totalPoints)
             let alertController = UIAlertController(title: nil, message:
                 "You gained 5 points!", preferredStyle: UIAlertControllerStyle.alert)
