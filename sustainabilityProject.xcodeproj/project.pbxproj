@@ -16,7 +16,6 @@
 		F090967F21728FF900301EF4 /* ListTasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090967E21728FF900301EF4 /* ListTasksTableViewController.swift */; };
 		F09096812172926500301EF4 /* DisplayTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09096802172926500301EF4 /* DisplayTaskViewController.swift */; };
 		F09096842172928F00301EF4 /* ListTasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09096832172928F00301EF4 /* ListTasksTableViewCell.swift */; };
-		F09096882172BB3200301EF4 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09096872172BB3200301EF4 /* Tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		F090967E21728FF900301EF4 /* ListTasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTasksTableViewController.swift; sourceTree = "<group>"; };
 		F09096802172926500301EF4 /* DisplayTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTaskViewController.swift; sourceTree = "<group>"; };
 		F09096832172928F00301EF4 /* ListTasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTasksTableViewCell.swift; sourceTree = "<group>"; };
-		F09096872172BB3200301EF4 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 		F09096862172BA4900301EF4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F09096872172BB3200301EF4 /* Tasks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,7 +180,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09096882172BB3200301EF4 /* Tasks.swift in Sources */,
 				F09096812172926500301EF4 /* DisplayTaskViewController.swift in Sources */,
 				F090966A2172717400301EF4 /* ViewController.swift in Sources */,
 				F09096702172717400301EF4 /* sustainabilityProject.xcdatamodeld in Sources */,
