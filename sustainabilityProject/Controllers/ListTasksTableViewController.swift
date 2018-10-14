@@ -20,8 +20,8 @@ class ListTasksTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var string = String(tryingTotal)
-        print("trying total" + string)
+//        var string = String(tryingTotal)
+//        print("trying total" + string)
         // get the navigation bar from the current navigation controller if there is one
         let navBar = self.navigationController?.navigationBar
 
