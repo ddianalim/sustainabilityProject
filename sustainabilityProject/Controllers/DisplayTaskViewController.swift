@@ -40,8 +40,7 @@ class DisplayTaskViewController: UIViewController {
         
         if let task = task {
             taskTitleLabel.text = task.title
-            let pointValueString = String(task.pointValue)
-            taskPointValueLabel.text = "+ " + pointValueString + " points"
+            taskPointValueLabel.text = "+ " + String(task.pointValue) + " points"
             taskDescriptionTextView.text = task.description
         } else {
             taskTitleLabel.text = "Title"
@@ -57,9 +56,7 @@ class DisplayTaskViewController: UIViewController {
         case "done":
             print("done bar button item tapped")
             let destination = segue.destination as! ListTasksTableViewController
-            let totalPointsString = String(totalPoints)
-            
-            destination.totalPointLabel.text = "You have: " + totalPointsString + " points"
+            destination.totalPointLabel.text = "You have: " + String(totalPoints) + " points"
             destination.tryingTotal = totalPoints
             
         default:
