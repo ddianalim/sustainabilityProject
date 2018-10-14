@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nulla-->
+        <!--nulla-->
         <scene sceneID="ukY-Lv-A0W">
             <objects>
                 <tableViewController id="Z39-Cq-6Wy" customClass="ListTasksTableViewController" customModule="sustainabilityProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,7 +75,7 @@
                             <outlet property="delegate" destination="Z39-Cq-6Wy" id="OVg-wm-fnS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Nulla" id="JDm-jd-iSi"/>
+                    <navigationItem key="navigationItem" title="nulla" id="JDm-jd-iSi"/>
                     <connections>
                         <outlet property="totalPointLabel" destination="iBa-9e-qSh" id="fLJ-x4-niu"/>
                     </connections>
@@ -143,7 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jRT-mb-WMx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nulla" id="xCF-Hr-BUA">
+                    <navigationItem key="navigationItem" title="nulla" id="xCF-Hr-BUA">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="vI9-6M-dZK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
