@@ -14,6 +14,19 @@ class ListTasksTableViewController: UITableViewController {
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
     }
+
+    @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == UIGestureRecognizerState.began
+        {
+            let alertController = UIAlertController(title: nil, message:
+                "Long-Press Gesture Detected", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    //    @IBAction func longPress(_ sender: Any) {
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
