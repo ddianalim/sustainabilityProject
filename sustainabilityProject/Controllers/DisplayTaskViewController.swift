@@ -14,17 +14,22 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskPointValueLabel: UILabel!
     @IBOutlet weak var taskDescriptionTextView: UITextView!
     
-    var task: Task?
+//    var task: Task
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        taskTitleLabel.text = "title"
-        taskPointValueLabel.text = "point value"
-        taskDescriptionTextView.text = "description..."
+        taskTitleLabel.text = "self.task.title"
+        taskPointValueLabel.text = "self.task.pointValue"
+        taskDescriptionTextView.text = "self.task.description"
+//        taskTitleLabel.text = self.task.title
+//        taskPointValueLabel.text = self.task.pointValue
+//        taskDescriptionTextView.text = self.task.description
     }
     
 }

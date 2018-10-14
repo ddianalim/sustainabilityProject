@@ -25,16 +25,20 @@ class ListTasksTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 1
-        return tasks1.count
+        return tasks.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath) as! ListTasksTableViewCell
-        for _ in 0..<tasks1.count{
-            cell.taskTitleLabel.text = tasks1[indexPath.row]
-            cell.taskPointValuelabel.text = points[indexPath.row]+" points"
-        }
+        let task = tasks[indexPath.row]
+        cell.taskTitleLabel.text = task.title
+        cell.taskPointValuelabel.text = task.pointValue
+
+        
+//        for _ in 0..<tasks1.count{
+//            cell.taskTitleLabel.text = tasks1[indexPath.row]
+//            cell.taskPointValueLabel.text = points[indexPath.row]+" points"
+//        }
         
         return cell
     }
@@ -44,16 +48,21 @@ class ListTasksTableViewController: UITableViewController {
  
         switch identifier {
         case "displayTask":
+//            let task = Task()
+//            task.title = taskTitleLabel.text ?? ""
+//            task.pointValue = taskPointValueLabel.text ?? ""
+//            task.description = taskDescriptionTextView.text ?? ""
             print("Transitioning to the Display Task View Controller")
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            
-            // 2
-            let task = tasks[indexPath.row]
-            // 3
-            let destination = segue.destination as! DisplayTaskViewController
-            // 4
-            destination.task = task
-            
+
+//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+//
+////            // 2
+////            let task = tasks[indexPath.row]
+////            // 3
+//           let destination = segue.destination as! DisplayTaskViewController
+//            let task = Task(title:tasks1[indexPath.row], pointValue:points[indexPath.row], description:"something random")
+//            destination.task = task
+//
         case "done":
             print("done bar button item tapped")
             
