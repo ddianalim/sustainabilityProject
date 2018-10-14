@@ -14,7 +14,11 @@ class ListTasksTableViewController: UITableViewController {
     
     var points = ["5", "10", "15", "20", "_", "5", "5", "5"]
     
-    var tasks = [Task]()
+    var tasks = [Task]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         
@@ -43,15 +47,16 @@ class ListTasksTableViewController: UITableViewController {
         return cell
     }
 
+/*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
  
         switch identifier {
         case "displayTask":
-//            let task = Task()
-//            task.title = taskTitleLabel.text ?? ""
-//            task.pointValue = taskPointValueLabel.text ?? ""
-//            task.description = taskDescriptionTextView.text ?? ""
+            let task = Task()
+            task.title = taskTitleLabel.text ?? ""
+            task.pointValue = taskPointValueLabel.text ?? ""
+            task.description = taskDescriptionTextView.text ?? ""
             print("Transitioning to the Display Task View Controller")
 
 //            guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -65,11 +70,11 @@ class ListTasksTableViewController: UITableViewController {
 //
         case "done":
             print("done bar button item tapped")
-            
+     
         default:
             print("unexpected segue identifier")
         }
     }
-    
+    */
 }
 
