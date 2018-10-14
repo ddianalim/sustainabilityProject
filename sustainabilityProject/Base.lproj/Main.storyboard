@@ -55,7 +55,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.81568627450980391" green="0.8784313725490196" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.63529411764705879" green="0.76862745098039209" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="mEa-5r-Axx" secondAttribute="bottom" constant="20" id="BtX-Zm-rh2"/>
                                         <constraint firstItem="mEa-5r-Axx" firstAttribute="leading" secondItem="Z5O-0J-a6c" secondAttribute="leading" constant="15" id="Sdq-ol-HXD"/>
@@ -114,7 +114,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-We-TvE">
                                 <rect key="frame" x="30" y="605" width="315" height="42"/>
-                                <color key="backgroundColor" red="0.81568627449999997" green="0.87843137250000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63529411764705879" green="0.76862745098039209" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="Add Points">
