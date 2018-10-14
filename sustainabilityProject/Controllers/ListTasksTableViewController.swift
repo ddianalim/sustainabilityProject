@@ -40,15 +40,21 @@ class ListTasksTableViewController: UITableViewController {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-        case "displayNote":
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-
-            let task = tasks[indexPath.row]
-            let destination = segue.destination as! DisplayTaskViewController
-            destination.task = task
+//        case "displayNote":
+////            print("display note")
+//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+//
+//            let task = tasks[indexPath.row]
+//            let destination = segue.destination as! DisplayTaskViewController
+//            destination.task = task
             
         default:
             print("unexpected segue identifier")
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            let task = tasks[indexPath.row]
+            let destination = segue.destination as! DisplayTaskViewController
+            destination.task = task
         }
     }
 

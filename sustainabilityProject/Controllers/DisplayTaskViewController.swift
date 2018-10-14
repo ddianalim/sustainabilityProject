@@ -22,17 +22,18 @@ class DisplayTaskViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         if let task = task {
             taskTitleLabel.text = task.title
             taskPointValueLabel.text = task.pointValue
             taskDescriptionTextView.text = task.description
-//            titleTextField.text = note.title
-//            contentTextView.text = note.content
         } else {
-            taskTitleLabel.text = "task.title"
-            taskPointValueLabel.text = "task.pointValue"
-            taskDescriptionTextView.text = "task.description"
+            taskTitleLabel.text = "Title"
+            taskPointValueLabel.text = "_ points"
+            taskDescriptionTextView.text = "Description of task..."
         }
+        
+        
 //        taskTitleLabel.text = self.task.title
 //        taskPointValueLabel.text = self.task.pointValue
 //        taskDescriptionTextView.text = self.task.description
@@ -47,7 +48,7 @@ class DisplayTaskViewController: UIViewController {
             print("done bar button item tapped")
             
         default:
-            print("unexpected segue identifier")
+            print("This is an unexpected segue identifier")
         }
     }
     
