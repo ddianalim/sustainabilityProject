@@ -44,22 +44,17 @@ class DisplayTaskViewController: UIViewController {
         }
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
         case "done":
             print("done bar button item tapped")
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//
-//            let task = tasks[indexPath.row]
             let destination = segue.destination as! ListTasksTableViewController
             let totalPointsString = String(totalPoints)
             
             destination.totalPointLabel.text = "You have: " + totalPointsString + " points"
-            
-            
+            destination.tryingTotal = totalPoints
             
         default:
             print("This is an unexpected segue identifier")
