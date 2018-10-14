@@ -17,19 +17,33 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskPointValueLabel: UILabel!
     @IBOutlet weak var taskDescriptionTextView: UITextView!
     
-    @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
-        if sender.state == UIGestureRecognizerState.began
-        {
+    @IBAction func addPointsButtonTapped(_ sender: UIButton) {
+            totalPoints += 5
+            print(totalPoints)
+        
             totalPoints += 5
             print(totalPoints)
             let alertController = UIAlertController(title: nil, message:
                 "You gained 5 points!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
-            
+
             self.present(alertController, animated: true, completion: nil)
-            
-        }
     }
+    //    @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
+//        if sender.state == UIGestureRecognizerState.began
+//        {
+//            totalPoints += 5
+//            print(totalPoints)
+//            let alertController = UIAlertController(title: nil, message:
+//                "You gained 5 points!", preferredStyle: UIAlertControllerStyle.alert)
+//            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+//
+//            self.present(alertController, animated: true, completion: nil)
+//
+//        }
+//    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -121,6 +121,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="addPointsButtonTapped:" destination="hAk-C9-y2L" eventType="touchUpInside" id="Trg-QT-cag"/>
                                     <outletCollection property="gestureRecognizers" destination="UzR-uY-8fY" appends="YES" id="bct-SR-mbY"/>
                                 </connections>
                             </button>
@@ -143,7 +144,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jRT-mb-WMx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xCF-Hr-BUA">
+                    <navigationItem key="navigationItem" title="Nulla" id="xCF-Hr-BUA">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="vI9-6M-dZK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
