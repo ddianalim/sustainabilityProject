@@ -35,7 +35,8 @@ class DisplayTaskViewController: UIViewController {
         
         if let task = task {
             taskTitleLabel.text = task.title
-            taskPointValueLabel.text = "+ " + task.pointValue + " points"
+            let pointValueString = String(task.pointValue)
+            taskPointValueLabel.text = "+ " + pointValueString + " points"
             taskDescriptionTextView.text = task.description
         } else {
             taskTitleLabel.text = "Title"

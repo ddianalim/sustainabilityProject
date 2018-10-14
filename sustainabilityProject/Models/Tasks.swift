@@ -10,10 +10,10 @@ import Foundation
 
 class Task {
     var title: String
-    var pointValue: String
+    var pointValue: Int
     var description: String
     
-    init(title: String, pointValue: String, description: String) {
+    init(title: String, pointValue: Int, description: String) {
         self.title = title
         self.pointValue = pointValue
         self.description = description
