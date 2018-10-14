@@ -152,6 +152,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPointsButton" destination="vj4-We-TvE" id="hFr-Iq-mGE"/>
                         <outlet property="taskDescriptionTextView" destination="lnG-Vu-SPH" id="END-YV-3uf"/>
                         <outlet property="taskPointValueLabel" destination="cpv-J2-H4e" id="UnN-eo-hcB"/>
                         <outlet property="taskTitleLabel" destination="5Yh-ZX-dqw" id="2QX-Oj-DO5"/>

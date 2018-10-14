@@ -17,6 +17,7 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskTitleLabel: UILabel!
     @IBOutlet weak var taskPointValueLabel: UILabel!
     @IBOutlet weak var taskDescriptionTextView: UITextView!
+    @IBOutlet weak var addPointsButton: UIButton!
     
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
@@ -33,6 +34,7 @@ class DisplayTaskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addPointsButton.layer.cornerRadius = 8
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -34,6 +34,7 @@ class ListTasksTableViewController: UITableViewController {
         tasks.append(Task(title: "Reuse straw/No straw", pointValue: 5, description: "Problem: \nAmericans use 500 million straws every day, and these straws can’t be recycled resulting in a lot of trash.\n\nSolution: \nAdopt the phrase “no straw please” when ordering a drink at a bar or glass of water at a restaurant. Or get yourself a reusable option like a stainless steel, bamboo, or silicone straw for sipping your iced coffee or boba."))
         tasks.append(Task(title: "Reuse Utensils", pointValue: 5, description: "Problem: \n6 million tons of plastic forks, spoons, and cutlery are tossed every year.\n\nSolution: \nBring your own reusable utensils whenever you eat out. A fork, spoon, and knife wrapped in a reusable napkin can be transported easily."))
         tasks.append(Task(title: "Paperless Receipts", pointValue: 5, description: "Problem: \nReceipts are a waste of ink and paper.\n\nSolution: \nIf it’s an option, always opt for an email or text receipt. You can even make a special email address for shopping only. That way all of your receipts are in one place and you avoid getting spammed with emails in your normal inbox."))
+
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
