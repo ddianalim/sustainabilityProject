@@ -16,6 +16,17 @@ class DisplayTaskViewController: UIViewController {
     @IBOutlet weak var taskPointValueLabel: UILabel!
     @IBOutlet weak var taskDescriptionTextView: UITextView!
     
+    @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
+        if sender.state == UIGestureRecognizerState.began
+        {
+            let alertController = UIAlertController(title: nil, message:
+                "You gained points!", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
