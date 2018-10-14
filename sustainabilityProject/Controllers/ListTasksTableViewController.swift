@@ -68,11 +68,14 @@ class ListTasksTableViewController: UITableViewController {
             
         default:
             print("Displaying Task/Unexpected segue identifier")
+            print(tryingTotal)
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
             let task = tasks[indexPath.row]
             let destination = segue.destination as! DisplayTaskViewController
             destination.task = task
+            destination.totalPoints = tryingTotal
+
         }
     }
 
