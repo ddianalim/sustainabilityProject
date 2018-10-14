@@ -20,22 +20,10 @@ class ListTasksTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var string = String(tryingTotal)
-//        print("trying total" + string)
-        // get the navigation bar from the current navigation controller if there is one
         let navBar = self.navigationController?.navigationBar
-
-        // change the bar tint color to change what the color of the bar itself looks like
         navBar?.barTintColor = UIColor.gray
-        
-        // tint color changes the color of the nav item colors eg. the back button
         navBar?.tintColor = UIColor.white
-        
-        // if you notice that your nav bar color is off by a bit, sometimes you will have to
-        // change it to not translucent to get correct color
         navBar?.isTranslucent = false
-        
-        // the following attribute changes the title color
         navBar?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         tasks.append(Task(title: "Reuse Bottle", pointValue: 5, description: "Problem: \nGlobally, humans buy a million plastic bottles per minute. 91% of all plastic is not recycled. \n\nSolution: \nPurchase a reusable water bottle and opt to refill it every day instead of buying a single use plastic water bottle. Staying hydrated is incredibly important. Treat your water bottle as if it’s your third hand and don’t ever leave home without it."))
@@ -55,10 +43,9 @@ class ListTasksTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listTasksTableViewCell", for: indexPath) as! ListTasksTableViewCell
         let task = tasks[indexPath.row]
-        let pointValueString = String(task.pointValue)
 
         cell.taskTitleLabel.text = task.title
-        cell.taskPointValuelabel.text = "+ " + pointValueString
+        cell.taskPointValuelabel.text = "+ " + String(task.pointValue)
         
         return cell
     }
