@@ -23,37 +23,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NTm-eq-kOe">
-                                <rect key="frame" x="15" y="413" width="345" height="37"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NTm-eq-kOe">
+                                <rect key="frame" x="15" y="468" width="345" height="37"/>
                                 <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="nulla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-Ya-Jxi">
-                                <rect key="frame" x="15" y="220" width="345" height="54"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Zero Waste For a Better Earth!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddJ-VW-EhJ">
-                                <rect key="frame" x="15" y="344" width="345" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zero Waste For a Better Earth!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddJ-VW-EhJ">
+                                <rect key="frame" x="15" y="404" width="345" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nullaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="93i-Fh-XHm">
-                                <rect key="frame" x="122" y="82" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nullaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="93i-Fh-XHm">
+                                <rect key="frame" x="122" y="160" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Qin-tr-5vq"/>
+                                    <constraint firstAttribute="height" constant="130" id="cer-af-VRG"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nulla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-Ya-Jxi">
+                                <rect key="frame" x="15" y="290" width="345" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.63529411759999999" green="0.76862745099999996" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NTm-eq-kOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="0Pq-9Y-bXB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXT-Ya-Jxi" secondAttribute="trailing" constant="15" id="GcF-ow-agJ"/>
-                            <constraint firstItem="ddJ-VW-EhJ" firstAttribute="top" secondItem="JXT-Ya-Jxi" secondAttribute="bottom" constant="70" id="Ked-xs-3Ns"/>
-                            <constraint firstItem="ddJ-VW-EhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="abL-JX-44f"/>
-                            <constraint firstItem="NTm-eq-kOe" firstAttribute="top" secondItem="ddJ-VW-EhJ" secondAttribute="bottom" constant="45" id="c7k-6K-Mg3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddJ-VW-EhJ" secondAttribute="trailing" constant="15" id="gOg-6t-ofh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTm-eq-kOe" secondAttribute="trailing" constant="15" id="iZV-WS-S1c"/>
-                            <constraint firstItem="JXT-Ya-Jxi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ite-fU-kUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddJ-VW-EhJ" secondAttribute="trailing" constant="15" id="6G7-Tz-GDC"/>
+                            <constraint firstItem="93i-Fh-XHm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dkb-zD-8mz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JXT-Ya-Jxi" secondAttribute="trailing" constant="15" id="GjL-mw-6rr"/>
+                            <constraint firstItem="JXT-Ya-Jxi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="IN7-O4-TaD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTm-eq-kOe" secondAttribute="trailing" constant="15" id="KxZ-ba-5h2"/>
+                            <constraint firstItem="ddJ-VW-EhJ" firstAttribute="top" secondItem="JXT-Ya-Jxi" secondAttribute="bottom" constant="60" id="UEf-0F-6op"/>
+                            <constraint firstItem="NTm-eq-kOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="arK-uL-Xv3"/>
+                            <constraint firstItem="JXT-Ya-Jxi" firstAttribute="top" secondItem="93i-Fh-XHm" secondAttribute="bottom" id="crU-yV-Cgl"/>
+                            <constraint firstItem="ddJ-VW-EhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ddB-HT-2Z0"/>
+                            <constraint firstItem="93i-Fh-XHm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="qqE-gL-2hO"/>
+                            <constraint firstItem="NTm-eq-kOe" firstAttribute="top" secondItem="ddJ-VW-EhJ" secondAttribute="bottom" constant="40" id="sUc-L7-iWx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
