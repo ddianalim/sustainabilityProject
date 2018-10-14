@@ -10,6 +10,8 @@ import UIKit
 
 class ListTasksTableViewController: UITableViewController {
     
+    @IBOutlet weak var totalPointLabel: UILabel!
+    
     var tasks = [Task]()
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
