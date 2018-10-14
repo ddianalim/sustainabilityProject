@@ -12,6 +12,7 @@ class DisplayTaskViewController: UIViewController {
     
     var task: Task?
     var totalPoints: Int = 0
+    var message: String = ""
     
     @IBOutlet weak var taskTitleLabel: UILabel!
     @IBOutlet weak var taskPointValueLabel: UILabel!
@@ -20,10 +21,12 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
             totalPoints += task.pointValue
+            message = "You gained " + String(task.pointValue) + " points!"
         }
             print(totalPoints)
+        
             let alertController = UIAlertController(title: nil, message:
-                "You gained 5 points!", preferredStyle: UIAlertControllerStyle.alert)
+                message, preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
     }
