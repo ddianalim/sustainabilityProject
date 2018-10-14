@@ -27,16 +27,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mEa-5r-Axx">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="59.5"/>
+                                            <rect key="frame" x="15" y="25" width="345" height="49.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cge-0x-ChK" userLabel="Task Title">
-                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-yW-ffh" userLabel="Point Value">
-                                                    <rect key="frame" x="0.0" y="30" width="345" height="29.5"/>
+                                                    <rect key="frame" x="0.0" y="25" width="345" height="24.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.41340815355329952" green="0.41340815355329952" blue="0.41340815355329952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -48,10 +48,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="mEa-5r-Axx" secondAttribute="bottom" id="BtX-Zm-rh2"/>
+                                        <constraint firstAttribute="bottom" secondItem="mEa-5r-Axx" secondAttribute="bottom" constant="25" id="BtX-Zm-rh2"/>
                                         <constraint firstItem="mEa-5r-Axx" firstAttribute="leading" secondItem="Z5O-0J-a6c" secondAttribute="leading" constant="15" id="Sdq-ol-HXD"/>
                                         <constraint firstAttribute="trailing" secondItem="mEa-5r-Axx" secondAttribute="trailing" constant="15" id="mNk-Yw-Y7B"/>
-                                        <constraint firstItem="mEa-5r-Axx" firstAttribute="top" secondItem="Z5O-0J-a6c" secondAttribute="top" id="qTe-pk-mOW"/>
+                                        <constraint firstItem="mEa-5r-Axx" firstAttribute="top" secondItem="Z5O-0J-a6c" secondAttribute="top" constant="25" id="qTe-pk-mOW"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
