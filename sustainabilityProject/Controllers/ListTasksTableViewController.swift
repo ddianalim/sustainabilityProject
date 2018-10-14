@@ -10,22 +10,17 @@ import UIKit
 
 class ListTasksTableViewController: UITableViewController {
     
-    var tasks1 = ["Reusable Bottle","Reusable Bag","Reusable Drink Container", "Packed Lunch", "Reusable Leftover Container", "Reusable straw/No straw", "Reusable Utensils", "Paperless Receipts"]
-    
-    var points = ["5", "10", "15", "20", "_", "5", "5", "5"]
-    
-    var tasks = [Task]() {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+    var tasks = [Task]()
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tasks.append(Task(title: "Reusable Bottle", pointValue: "5", description: "xxx"))
+        tasks.append(Task(title: "Reusable Bag", pointValue: "500", description: "yyy"))
+        tasks.append(Task(title: "Reusable", pointValue: "50", description: "zzz"))
+        tasks.append(Task(title: "Reusable Bottle", pointValue: "15", description: "iii"))
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,7 +32,6 @@ class ListTasksTableViewController: UITableViewController {
         let task = tasks[indexPath.row]
         cell.taskTitleLabel.text = task.title
         cell.taskPointValuelabel.text = task.pointValue
-
         
 //        for _ in 0..<tasks1.count{
 //            cell.taskTitleLabel.text = tasks1[indexPath.row]
