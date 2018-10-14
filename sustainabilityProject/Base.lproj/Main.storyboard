@@ -94,7 +94,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yh-ZX-dqw">
                                 <rect key="frame" x="15" y="79" width="345" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -113,7 +113,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-We-TvE">
-                                <rect key="frame" x="30" y="605" width="315" height="42"/>
+                                <rect key="frame" x="50" y="605" width="275" height="42"/>
                                 <color key="backgroundColor" red="0.63529411764705879" green="0.76862745098039209" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
@@ -133,8 +133,8 @@
                             <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="5Yh-ZX-dqw" secondAttribute="trailing" constant="15" id="PUO-h4-SW4"/>
                             <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="cpv-J2-H4e" secondAttribute="trailing" constant="15" id="bQn-hT-cVF"/>
                             <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="lnG-Vu-SPH" secondAttribute="trailing" constant="15" id="fYl-bd-Cz4"/>
-                            <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="vj4-We-TvE" secondAttribute="trailing" constant="30" id="hD5-cg-M93"/>
-                            <constraint firstItem="vj4-We-TvE" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="30" id="i54-Fw-KgO"/>
+                            <constraint firstItem="jRT-mb-WMx" firstAttribute="trailing" secondItem="vj4-We-TvE" secondAttribute="trailing" constant="50" id="hD5-cg-M93"/>
+                            <constraint firstItem="vj4-We-TvE" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="50" id="i54-Fw-KgO"/>
                             <constraint firstItem="lnG-Vu-SPH" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="15" id="k0A-8R-py9"/>
                             <constraint firstItem="jRT-mb-WMx" firstAttribute="bottom" secondItem="vj4-We-TvE" secondAttribute="bottom" constant="20" id="mOb-gs-U5m"/>
                             <constraint firstItem="cpv-J2-H4e" firstAttribute="leading" secondItem="jRT-mb-WMx" secondAttribute="leading" constant="15" id="mu9-Oq-Nti"/>
