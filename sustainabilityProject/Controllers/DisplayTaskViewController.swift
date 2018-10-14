@@ -22,7 +22,7 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
             totalPoints += task.pointValue
-            message = "+" + String(task.pointValue) + " points!"
+            message = "Thanks for helping the environment! \n\n+" + String(task.pointValue) + " points"
         }
             print(totalPoints)
         
