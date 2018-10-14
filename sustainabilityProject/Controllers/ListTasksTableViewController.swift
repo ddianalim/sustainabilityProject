@@ -13,7 +13,7 @@ class ListTasksTableViewController: UITableViewController {
     @IBOutlet weak var totalPointLabel: UILabel!
     
     var tasks = [Task]()
-    var tryingTotal: Int = 0
+    var totalPoints: Int = 0
 
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
     }
@@ -57,13 +57,13 @@ class ListTasksTableViewController: UITableViewController {
             
         default:
             print("Displaying Task/Unexpected segue identifier")
-            print(tryingTotal)
+            print(totalPoints)
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             
             let task = tasks[indexPath.row]
             let destination = segue.destination as! DisplayTaskViewController
             destination.task = task
-            destination.totalPoints = tryingTotal
+            destination.totalPoints = totalPoints
 
         }
     }

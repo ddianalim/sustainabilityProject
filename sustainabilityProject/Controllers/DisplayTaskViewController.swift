@@ -21,7 +21,7 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
             totalPoints += task.pointValue
-            message = "You gained " + String(task.pointValue) + " points!"
+            message = "+ " + String(task.pointValue) + " points!"
         }
             print(totalPoints)
         
@@ -57,7 +57,7 @@ class DisplayTaskViewController: UIViewController {
             print("done bar button item tapped")
             let destination = segue.destination as! ListTasksTableViewController
             destination.totalPointLabel.text = "You have: " + String(totalPoints) + " points"
-            destination.tryingTotal = totalPoints
+            destination.totalPoints = totalPoints
             
         default:
             print("This is an unexpected segue identifier")
