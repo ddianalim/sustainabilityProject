@@ -17,14 +17,14 @@ class ListTasksTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tasks.append(Task(title: "Reusable Bottle", pointValue: "5", description: "xxx"))
-        tasks.append(Task(title: "Reusable Bag", pointValue: "500", description: "yyy"))
-        tasks.append(Task(title: "Reusable Drink Container", pointValue: "50", description: "zzz"))
-        tasks.append(Task(title: "Packed Lunch", pointValue: "15", description: "iii"))
-        tasks.append(Task(title: "Reusable Leftover Container", pointValue: "15", description: "iii"))
-        tasks.append(Task(title: "Reusable straw/No straw", pointValue: "15", description: "iii"))
-        tasks.append(Task(title: "Reusable Utensils", pointValue: "15", description: "iii"))
-        tasks.append(Task(title: "Paperless Receipts", pointValue: "15", description: "iii"))
+        tasks.append(Task(title: "Reusable Bottle", pointValue: "5", description: "Problem: Globally, humans buy a million plastic bottles per minute. 91% of all plastic is not recycled. Solution: Purchase a reusable water bottle and opt to refill it every day instead of buying a single use plastic water bottle. Staying hydrated is incredibly important. Treat your water bottle as if it’s your third hand and don’t ever leave home without it."))
+        tasks.append(Task(title: "Reusable Bag", pointValue: "10", description: "yyy"))
+        tasks.append(Task(title: "Reusable Drink Container", pointValue: "15", description: "zzz"))
+        tasks.append(Task(title: "Packed Lunch", pointValue: "20", description: "iii"))
+        tasks.append(Task(title: "Reusable Leftover Container", pointValue: "20", description: "iii"))
+        tasks.append(Task(title: "Reusable straw/No straw", pointValue: "5", description: "iii"))
+        tasks.append(Task(title: "Reusable Utensils", pointValue: "5", description: "iii"))
+        tasks.append(Task(title: "Paperless Receipts", pointValue: "5", description: "iii"))
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
