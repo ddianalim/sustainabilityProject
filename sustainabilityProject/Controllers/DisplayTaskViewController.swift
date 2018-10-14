@@ -11,6 +11,7 @@ import UIKit
 class DisplayTaskViewController: UIViewController {
     
     var task: Task?
+    var totalPoints: Int = 0
     
     @IBOutlet weak var taskTitleLabel: UILabel!
     @IBOutlet weak var taskPointValueLabel: UILabel!
@@ -19,7 +20,8 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func longPress(_ sender: UILongPressGestureRecognizer) {
         if sender.state == UIGestureRecognizerState.began
         {
-            
+            totalPoints += 5
+            print(totalPoints)
             let alertController = UIAlertController(title: nil, message:
                 "You gained 5 points!", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
