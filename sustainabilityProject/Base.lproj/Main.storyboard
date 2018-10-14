@@ -122,7 +122,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addPointsButtonTapped:" destination="hAk-C9-y2L" eventType="touchUpInside" id="Trg-QT-cag"/>
-                                    <outletCollection property="gestureRecognizers" destination="UzR-uY-8fY" appends="YES" id="bct-SR-mbY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,12 +159,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kaP-nO-bYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="F1i-Se-b4h" userLabel="Exit" sceneMemberID="exit"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="UzR-uY-8fY">
-                    <connections>
-                        <action selector="longPress:" destination="hAk-C9-y2L" id="S3l-nM-SZM"/>
-                        <outlet property="delegate" destination="vj4-We-TvE" id="3wM-ui-cSM"/>
-                    </connections>
-                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1525.5999999999999" y="407.0464767616192"/>
         </scene>
