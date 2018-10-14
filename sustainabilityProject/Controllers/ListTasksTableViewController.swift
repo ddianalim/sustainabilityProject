@@ -44,8 +44,6 @@ class ListTasksTableViewController: UITableViewController {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-//        case "displayNote":
-//            print("display note")
             
         default:
             print("unexpected segue identifier")
