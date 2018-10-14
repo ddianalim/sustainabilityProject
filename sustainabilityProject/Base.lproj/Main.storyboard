@@ -54,9 +54,11 @@
                                         <constraint firstItem="mEa-5r-Axx" firstAttribute="top" secondItem="Z5O-0J-a6c" secondAttribute="top" id="qTe-pk-mOW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="taskPointValuelabel" destination="h8G-yW-ffh" id="K5b-H7-7Xr"/>
                                     <outlet property="taskTitleLabel" destination="cge-0x-ChK" id="Zy5-yq-kaD"/>
+                                    <outletCollection property="gestureRecognizers" destination="rUS-Fw-XrJ" appends="YES" id="YWM-Ob-DU3"/>
                                     <segue destination="hAk-C9-y2L" kind="show" identifier="displayTask" id="uuk-UD-Fty"/>
                                 </connections>
                             </tableViewCell>
@@ -69,6 +71,7 @@
                     <navigationItem key="navigationItem" title="Nulla" id="JDm-jd-iSi"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C73-Nj-QEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rUS-Fw-XrJ"/>
             </objects>
             <point key="canvasLocation" x="793" y="408"/>
         </scene>
