@@ -33,12 +33,23 @@ class ListTasksTableViewController: UITableViewController {
         cell.taskTitleLabel.text = task.title
         cell.taskPointValuelabel.text = task.pointValue
         
-//        for _ in 0..<tasks1.count{
-//            cell.taskTitleLabel.text = tasks1[indexPath.row]
-//            cell.taskPointValueLabel.text = points[indexPath.row]+" points"
-//        }
-        
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "displayNote":
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+
+            let task = tasks[indexPath.row]
+            let destination = segue.destination as! DisplayTaskViewController
+            destination.task = task
+            
+        default:
+            print("unexpected segue identifier")
+        }
     }
 
 /*
@@ -54,10 +65,7 @@ class ListTasksTableViewController: UITableViewController {
             print("Transitioning to the Display Task View Controller")
 
 //            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//
-////            // 2
 ////            let task = tasks[indexPath.row]
-////            // 3
 //           let destination = segue.destination as! DisplayTaskViewController
 //            let task = Task(title:tasks1[indexPath.row], pointValue:points[indexPath.row], description:"something random")
 //            destination.task = task
