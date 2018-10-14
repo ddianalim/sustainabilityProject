@@ -22,13 +22,13 @@ class DisplayTaskViewController: UIViewController {
     @IBAction func addPointsButtonTapped(_ sender: UIButton) {
         if let task = task {
             totalPoints += task.pointValue
-            message = "Thanks for helping the environment! \n\n+" + String(task.pointValue) + " points"
+            message = "+" + String(task.pointValue) + " points"
         }
             print(totalPoints)
         
             let alertController = UIAlertController(title: nil, message:
-                message, preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default,handler: nil))
+                "Thanks for helping the environment!", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: message, style: UIAlertActionStyle.default,handler: nil))
             self.present(alertController, animated: true, completion: nil)
     }
     
