@@ -20,12 +20,12 @@ A user opens the app and logs in. Then they can get points by indicating that th
 ## Views
 - Home (see all the predetermined Tasks)
 - Task (description, Complete button)
+  - Launch Screen
 
 ## Data Models
 - Tasks
   - Name
-  - Point value
-  - Difficulty
+  - Point value (represents task difficulty)
   - Description
   - Category
 
