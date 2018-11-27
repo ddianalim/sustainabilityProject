@@ -14,6 +14,16 @@ Make sure you have Xcode version 9.2 downloaded on your computer (you must have 
 4. Now you have the project open, do Command B. This will build the project in XCode. Xcode Simulator should open up, and you will see the app running on an iPhone in a moment. (If this doesn't work, make sure you've selected a iOS Simulator (try iPhone X!) to run sustainabilityProject on.)
 5. Play around with our app! Experiment by adding points to your profile, and reading about the different actions you can take to practice a ZeroWaste lifestyle and live more sustainability. Enjoy :)
 
+### Pitch Video
+https://youtu.be/NnuDt5xJzyQ
+
+### Demo
+https://youtu.be/cOl4Q651ITg
+
+### Presentation
+https://he-s3.s3.amazonaws.com/media/sprint/teentechglobal-civic-hackathon-1/team/487562/a46c1a9sustainability_project.pdf
+
+
 ********************
 
 ## Audience
